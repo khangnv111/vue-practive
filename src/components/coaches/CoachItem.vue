@@ -3,7 +3,7 @@
     <h3>{{ fullName }}</h3>
     <h4>${{ rate }}/hour</h4>
     <div>
-      <span v-for="item in areas" :key="item">{{ item }}</span>
+      <base-badge v-for="item in areas" :key="item" :type="item" :title="item">{{ item }}</base-badge>
     </div>
     <div class="actions">
       <base-button mode="outline" link :to="coachContactLink">Contact</base-button>
